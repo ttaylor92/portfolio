@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.scss';
 
+//components
+import Slider from './components/slider/slider.js';
+
 function App() {
   return (
     <div className="App">
-      hello
+      <div className="sidebar"> Hello </div>
+      <div className="main">
+        <Slider />
+      </div>
     </div>
   );
 }
