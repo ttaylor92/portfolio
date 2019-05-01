@@ -23,9 +23,9 @@ export default class Slider extends React.Component{
 
     return(
       <Slick {...settings}>
-        <div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div>
-        <div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div>
-        <div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div>
+        <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
+        <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
+        <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
       </Slick>
     )
   }

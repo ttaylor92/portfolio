@@ -1,0 +1,38 @@
+$bg-grey: #f2f3f7;
+
+.sidebar{
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background: $bg-grey;
+  text-align: center;
+
+  .dp{
+    width: 70%;
+    border-radius: 200px;
+    margin-top: 50px;
+  }
+
+  .sm-icons{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin-left: 28px;
+    bottom: 10px;
+    display: flex;
+    text-align: center;
+
+    li{
+      margin-left: 10px;
+      font-size: 20px;
+
+      a{
+        color: grey;
+
+        &:hover{
+          color: black;
+        }
+      }
+    }
+  }
+}
