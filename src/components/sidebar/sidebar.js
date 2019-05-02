@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './sidebar.scss';
-import { DP } from '../../config.js';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +15,19 @@ export default class SideBar extends React.Component {
   render(){
     return(
       <div className="sidebar">
-        <img className="dp" src={DP} alt="dp"/>
+        <img className="dp" src={this.props.dp} alt="dp"/>
+        <div>
+          <h1>Tyrone Taylor</h1>
+          <p><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</p>
+        </div>
+
+        <ul className="nav-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
         <ul className="sm-icons">
           <li><a href="https://www.freecodecamp.org/ttaylor" target="_blank" rel="noopener noreferrer">
@@ -38,6 +49,8 @@ export default class SideBar extends React.Component {
             <i className="fab fa-codepen"/>
           </a></li>
         </ul>
+
+        <p><small>&copy; Copyright {this.props.year} All rights reserved</small></p>
       </div>
     )
   }
