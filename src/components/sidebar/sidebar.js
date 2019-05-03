@@ -14,6 +14,7 @@ export default class SideBar extends React.Component {
         <div>
           <h1>Tyrone Taylor</h1>
           <a href="#contact"><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</a>
+          <p><small><i className="fas fa-phone" /> <span style={{ color: '#0099CD'}}>{this.props.contact}</span></small></p>
         </div>
 
         <ul className="nav-items">

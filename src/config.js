@@ -24,9 +24,15 @@ const skills = [
   ]
 ]
 
+const contact={
+  number: '+1876 327 7085',
+  address: 'Port Morant, St Thomas, Jamaica'
+}
+
 export {
   dp,
   year,
   about,
-  skills
+  skills,
+  contact
 }

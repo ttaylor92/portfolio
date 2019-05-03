@@ -9,6 +9,26 @@ $marg: 20px;
 
     .left{
       width: 50%;
+
+      div{
+        display: flex;
+        margin-top: 50px;
+
+        i{
+          font-size: 40px;
+          background: $bg-grey;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+          padding-top: 30px;
+        }
+
+        p{
+          margin-left: 20px;
+          padding-top: 40px;
+          font-size: 15px;
+        }
+      }
     }
 
     .right{
