@@ -3,11 +3,24 @@
 .skills{
   padding: $pd;
 
-  .bar-container{
-    margin-top: 20px;
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
 
-    p{
-      margin: 0;
+    .bar-container{
+      margin-top: 20px;
+
+      p{
+        margin: 0;
+      }
+
+      label{
+        margin: 0;
+      }
+
+      .progress{
+        width: 90%;
+      }
     }
   }
 }

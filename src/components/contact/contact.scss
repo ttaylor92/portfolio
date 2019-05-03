@@ -1,0 +1,38 @@
+@import "../variables.scss";
+$marg: 20px;
+
+#contact{
+  padding: $pd;
+
+  .flex-container{
+    display: flex;
+
+    .left{
+      width: 50%;
+    }
+
+    .right{
+      margin-left: 40px;
+      width: 50%;
+
+      div{
+        margin-top: $marg;
+
+        input{
+          height: 54px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        textarea{
+          height: 200px;
+        }
+      }
+
+      button{
+        margin-top: $marg;
+        width: 25%;
+      }
+    }
+  }
+}

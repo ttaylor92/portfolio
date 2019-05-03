@@ -1,1 +1,1 @@
-.skills{padding:70px 20px 20px 20px}.skills .bar-container{margin-top:20px}.skills .bar-container p{margin:0}
+.skills{padding:70px 20px 20px 20px}.skills .grid-container{display:grid;grid-template-columns:auto auto auto}.skills .grid-container .bar-container{margin-top:20px}.skills .grid-container .bar-container p{margin:0}.skills .grid-container .bar-container label{margin:0}.skills .grid-container .bar-container .progress{width:90%}

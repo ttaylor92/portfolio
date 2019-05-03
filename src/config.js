@@ -7,12 +7,21 @@ const about = {
 }
 
 const skills = [
-  {type: 'ReactJS', level: 50},
-  {type: 'Angular', level: 20},
-  {type: 'Javascript', level: 50},
-  {type: 'Bootstrap', level: 30},
-  {type: 'CSS', level: 70},
-  {type: 'jQuery', level: 30}
+  ['lor body'],
+  [
+    {type: 'ReactJS', level: 68},
+    {type: 'Angular', level: 20},
+    {type: 'Javascript', level: 50},
+    {type: 'Bootstrap', level: 40},
+    {type: 'CSS', level: 70},
+    {type: 'jQuery', level: 30},
+    {type: 'PHP', level: 25},
+    {type: 'Photoshop', level: 60},
+    {type: 'After Effects', level: 50},
+    {type: 'Illustrator', level: 50},
+    {type: 'Blender', level: 30},
+    {type: 'Cinema 4D', level: 30}
+  ]
 ]
 
 export {

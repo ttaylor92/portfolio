@@ -5,10 +5,11 @@ import './skills.scss';
 const Skills = props => {
 
 const skillMap = () => {
-    return  props.info.map ( item => (
+    return  props.info[1].map ( item => (
       <div key={item.type.length} className="bar-container">
         <p>{item.type}</p>
-        <div className="progress">
+        <label for="progress"><small>{item.level}%</small></label>
+        <div className="progress" id="progress">
           <div
             class="progress-bar progress-bar-striped"
             role="progressbar"
@@ -27,7 +28,10 @@ const skillMap = () => {
   return(
     <div className="skills">
       <h3>Skills</h3>
-      {skillMap()}
+      <p>{props.info[0]}</p>
+      <div className="grid-container">
+        {skillMap()}
+      </div>
     </div>
   )
 }

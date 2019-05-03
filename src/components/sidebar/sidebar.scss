@@ -14,7 +14,13 @@
     margin-top: 80px;
   }
 
-  h1 { font-family: "Playfair Display", Georgia, serif;  margin-top: 20px;}
+  h1 {
+    font-family: "Playfair Display",
+    Georgia, serif;
+    margin-top: 20px;
+    font-weight: 600;
+    color: grey;
+  }
 
   ul{ list-style: none; padding: 0; }
 
@@ -46,5 +52,8 @@
       &:hover{
         color: black;
       }
+    }
+    a[href="#contact"]:hover{
+      text-decoration: none;
     }
 }

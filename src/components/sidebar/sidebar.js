@@ -2,11 +2,6 @@ import React from 'react';
 
 import './sidebar.scss';
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { FasGitHub } from '@fortawesome/free-solid-svg-icons';
-//
-// library.add(FasGitHub)
 export default class SideBar extends React.Component {
   constructor(props) {
     super(props)
@@ -18,13 +13,15 @@ export default class SideBar extends React.Component {
         <img className="dp" src={this.props.dp} alt="dp"/>
         <div>
           <h1>Tyrone Taylor</h1>
-          <p><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</p>
+          <a href="#contact"><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</a>
         </div>
 
         <ul className="nav-items">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Skills</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Education</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
