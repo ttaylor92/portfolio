@@ -1,15 +1,12 @@
 import React from 'react';
 
-import './experience.scss';
-
+import './education.scss';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './VerticalTimeline.css';
-import './VerticalTimelineElement.css';
 
 const colors = ["32,106,133", "233, 30, 99","33, 150, 243","16, 204, 82","32,106,133", "233, 30, 99","33, 150, 243","16, 204, 82"]
 
-const Experience = props => {
+const Education = props => {
 
   const elementMap = () =>{
     return props.info.map((item, i) => (
@@ -19,8 +16,7 @@ const Experience = props => {
         icon={<i className="fas fa-building" />}
         key={i}
       >
-        <h3 className="vertical-timeline-element-title">{item.job}</h3>
-        <h4 className="vertical-timeline-element-subtitle">{item.location}</h4>
+        <h3 className="vertical-timeline-element-title">{item.type}</h3>
         <p style={{ margin: '0'}}><small>{item.time}</small></p>
         <p>
           {item.description}
@@ -30,8 +26,8 @@ const Experience = props => {
   }
 
   return(
-    <div id="experience">
-      <h3>Experience</h3>
+    <div className="education">
+      <h3>Education</h3>
       <VerticalTimeline>
         {elementMap()}
       </VerticalTimeline>
@@ -39,4 +35,4 @@ const Experience = props => {
   )
 }
 
-export default Experience;
+export default Education;

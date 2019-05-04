@@ -68,11 +68,30 @@ const experience=[
   }
 ]
 
+const education=[
+  {
+    type: 'FreeCodeCamp',
+    time: '2017-Present',
+    description: 'Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Libraries'
+  },
+  {
+    type: 'University of Technology',
+    time: '2013-2014',
+    description: 'CompTIA A+ Certification'
+  },
+  {
+    type: 'Heart Trust National Tools and Engineering Institute',
+    time: '2009-2010',
+    description: 'Level Two Computer Servicing and Repairs Technician Diploma'
+  }
+]
+
 export {
   dp,
   year,
   about,
   skills,
   contact,
-  experience
+  experience,
+  education
 }

@@ -3,4 +3,15 @@
 #experience{
   padding: $pd;
   background: $bg-grey;
+
+  .vertical-timeline::before{
+    background: white;
+    }
+
+    .vertical-timeline-element-content{
+      border-top: purple;
+      -webkit-box-shadow: 0px 5px 9px -6px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 5px 9px -6px rgba(0,0,0,0.75);
+      box-shadow: 0px 5px 9px -6px rgba(0,0,0,0.75);
+    }
 }

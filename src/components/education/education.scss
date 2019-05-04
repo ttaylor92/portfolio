@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+.education{
+  padding: $pd;
+  background: $bg-grey;
+
+  .vertical-timeline.vertical-timeline--two-columns:before{
+    left: 50%;
+    margin-left: -2px;
+  }
+
+}
