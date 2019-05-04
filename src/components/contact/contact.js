@@ -10,35 +10,49 @@ export default class Contact extends React.Component{
     this.state ={
       name: '',
       email: '',
-      topic: '',
-      subject: '',
+      message: '',
       mailSent: false,
-      error: null
+      buttonText: 'Send Message'
     }
   }
 
   onChange =e => this.setState({[e.target.name]: e.target.value})
 
   handleFormSubmit = e => {
-    e.preventDefault();
-    axios({
-      method: 'post',
-      url: `${this.props.path}`,
-      headers: { 'content-type': 'application/json' },
-      data: this.state
+    this.setState({
+      buttonText: '...sending'
     })
-      .then(result => {
-        this.setState({
-          mailSent: result.data.sent
-        })
-      })
-      .catch(error => this.setState({ error: error.message }));
+
+    let data = {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+    }
+
+    axios.post('https://nodejs-express-99x7jvuf7.now.sh/', data)
+    .then( res => {
+        this.setState({ mailSent: true }, this.resetForm())
+    })
+    .catch( () => {
+      console.log('Message not sent')
+    })
+
+    this.resetForm();
   }
+
+  resetForm = () => {
+    this.setState({
+        name: '',
+        message: '',
+        email: '',
+        buttonText: 'Message Sent'
+    })
+}
 
   render(){
     console.log(this.state)
 
-    let { name, email, topic, subject } = this.state;
+    let { name, email, message, buttonText } = this.state;
     return(
       <div id="contact">
         <h3>Contact</h3>
@@ -61,9 +75,8 @@ export default class Contact extends React.Component{
             <form onSubmit={this.handleFormSubmit}>
               <div><input className="form-control" placeholder="Name" name="name" type="text" onChange={this.onChange} value={name} required /></div>
               <div><input className="form-control" placeholder="Email" name="email" type="email" onChange={this.onChange} value={email} required /></div>
-              <div><input className="form-control" placeholder="Topic" name="topic" type="text" onChange={this.onChange} value={topic} required /></div>
-              <div><textarea className="form-control" placeholder="Subject" name="subject" type="text" onChange={this.onChange} value={subject} required /></div>
-              <button className="btn btn-primary" type="submit">Submit</button>
+              <div><textarea className="form-control" placeholder="subject" name="message" type="text" onChange={this.onChange} value={message} required /></div>
+              <button className="btn btn-primary" type="submit">{buttonText}</button>
             </form>
           </div>
         </div>

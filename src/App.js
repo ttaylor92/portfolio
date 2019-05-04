@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import sal from 'sal.js';
 
-import { dp, year, about, skills, contact } from './config.js';
+import { dp, year, about, skills, contact, experience } from './config.js';
 
 //components
 import Slider from './components/slider/slider.js';
@@ -11,6 +11,7 @@ import About from './components/about/about.js';
 import Skills from './components/skills/skills.js';
 import Portfolio from './components/portfolio/portfolio.js';
 import Contact from './components/contact/contact.js';
+import Experience from './components/experience/experience.js';
 
 const API_PATH = './api/index.php';
 
@@ -22,8 +23,8 @@ function App() {
         <Slider />
         <About info={about}/>
         <Skills info={skills}/>
+        <Experience info={experience} />
         <Portfolio />
-
         <Contact path={API_PATH} info={contact} />
       </div>
     </div>
