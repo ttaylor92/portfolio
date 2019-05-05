@@ -16,7 +16,7 @@ const Experience = props => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         iconStyle={{ background: `rgb(${colors[i]})`, color: '#fff' }}
-        icon={<i className="fas fa-building" />}
+        icon={<i className={`${item.icon}`} />}
         key={i}
       >
         <h3 className="vertical-timeline-element-title">{item.job}</h3>

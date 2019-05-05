@@ -13,7 +13,7 @@ const Education = props => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         iconStyle={{ background: `rgb(${colors[i]})`, color: '#fff' }}
-        icon={<i className="fas fa-building" />}
+        icon={<i className={`${item.icon}`} />}
         key={i}
       >
         <h3 className="vertical-timeline-element-title">{item.type}</h3>
@@ -28,7 +28,7 @@ const Education = props => {
   return(
     <div className="education">
       <h3>Education</h3>
-      <VerticalTimeline>
+      <VerticalTimeline layout="1-column">
         {elementMap()}
       </VerticalTimeline>
     </div>

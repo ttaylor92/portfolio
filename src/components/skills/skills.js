@@ -8,12 +8,14 @@ const skillMap = () => {
     return  props.info[1].map ( (item, i) => (
       <div key={i} className="bar-container">
         <p>{item.type}</p>
-        <label htmlFor="progress"><small>{item.level}%</small></label>
+        <div style={{ width: `${item.level}%` }}>
+          <label htmlFor="progress"><small>{item.level}%</small></label>
+        </div>
         <div className="progress" id="progress">
           <div
             className="progress-bar progress-bar-striped"
             role="progressbar"
-            style={{width: `${item.level}%`}}
+            style={{ width: `${item.level}%` }}
             aria-valuenow={item.level}
             aria-valuemin="0"
             aria-valuemax="100">
