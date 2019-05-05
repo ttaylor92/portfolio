@@ -6,12 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-export default class Slider extends React.Component{
-  constructor(props){
-    super(props)
-  }
+const Slider = () => {
 
-  render(){
     const settings = {
       dots: true,
       infinite: true,
@@ -28,5 +24,6 @@ export default class Slider extends React.Component{
         <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
       </Slick>
     )
-  }
 }
+
+export default Slider;

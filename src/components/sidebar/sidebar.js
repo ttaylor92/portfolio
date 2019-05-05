@@ -2,19 +2,15 @@ import React from 'react';
 
 import './sidebar.scss';
 
-export default class SideBar extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+const SideBar = props => {
 
-  render(){
     return(
       <div className="sidebar">
-        <img className="dp" src={this.props.dp} alt="dp"/>
+        <img className="dp" src={props.dp} alt="dp"/>
         <div>
           <h1>Tyrone Taylor</h1>
           <a href="#contact"><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</a>
-          <p><small><i className="fas fa-phone" /> <span style={{ color: '#0099CD'}}>{this.props.contact}</span></small></p>
+          <p><small><i className="fas fa-phone" /> <span style={{ color: '#0099CD'}}>{props.contact}</span></small></p>
         </div>
 
         <ul className="nav-items">
@@ -48,8 +44,9 @@ export default class SideBar extends React.Component {
           </a></li>
         </ul>
 
-        <p><small>&copy; Copyright {this.props.year} All rights reserved</small></p>
+        <p><small>&copy; Copyright {props.year} All rights reserved</small></p>
       </div>
     )
   }
-}
+
+  export default SideBar;
