@@ -4,7 +4,7 @@ import './about.scss';
 
 const About = props => {
   return(
-    <div className="about">
+    <div id="about">
       <h1>About</h1>
       <h3>{props.info.title}</h3>
       <p>{props.info.body}</p>

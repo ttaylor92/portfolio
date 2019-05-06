@@ -25,10 +25,8 @@ const skillMap = () => {
   ))
 }
 
-  console.log(skillMap())
-
   return(
-    <div className="skills">
+    <div id="skills">
       <h3>Skills</h3>
       <p>{props.info[0]}</p>
       <div className="grid-container">

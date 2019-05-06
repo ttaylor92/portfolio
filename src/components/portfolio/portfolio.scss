@@ -1,5 +1,16 @@
 @import "../variables.scss";
 
-.portfolio{
+#portfolio{
   padding: $pd;
+
+  .loader{
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .codepen-img{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import sal from 'sal.js';
 
-import { dp, year, about, skills, contact, experience, education } from './config.js';
+import { dp, year, about, skills, contact, experience, education,portfolio } from './config.js';
 
 //components
 import Slider from './components/slider/slider.js';
@@ -20,13 +20,13 @@ function App() {
   return (
     <div className="App">
       <SideBar dp={dp} year={year} contact={contact.number}/>
-      <div className="main">
+      <div className="main" data-spy="scroll" data-target="#nav-section" data-offset="0">>
         <Slider />
         <About info={about}/>
         <Skills info={skills}/>
         <Experience info={experience} />
         <Education info={education} />
-        <Portfolio />
+        <Portfolio codepen={portfolio.codepen}/>
         <Contact path={API_PATH} info={contact} />
       </div>
     </div>

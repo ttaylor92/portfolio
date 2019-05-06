@@ -95,6 +95,81 @@ const education=[
   }
 ]
 
+const portfolio = {
+  codepen : [
+    {
+      url: 'https://codepen.io/curlybraces/pen/QqVZqX',
+      name: 'Fcc Portfolio',
+      language: 'HTML'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/dZpGpG',
+      name: 'Fcc WikiSearch',
+      language: 'jQuery'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/JOMQmw',
+      name: 'Fcc Twitch.tv API',
+      language: 'jQuery'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/zELxWv',
+      name: 'Fcc Tribute Page',
+      language: 'HTML'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/rGQmmX',
+      name: 'Random Post Generator',
+      language: 'jQuery'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/JOdVyL',
+      name: 'Fcc Weather App',
+      language: 'jQuery'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/GLqegP',
+      name: 'Fcc Product Landing Page',
+      language: 'HTML'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/QaWeBz',
+      name: 'Todo App',
+      language: 'JavaScript'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/vMvamV',
+      name: 'Fcc JavaScript Calculator',
+      language: 'JavaScript, ReactJS'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/pBGVLd',
+      name: 'Fcc Pomodoro Clock',
+      language: 'JavaScript, ReactJS'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/dLpVdW',
+      name: 'Fcc Technical Documentation Page',
+      language: 'HTML'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/bJQWrz',
+      name: 'Fcc Drummachine',
+      language: 'JavaScript, ReactJS'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/VNdMrJ',
+      name: 'Fcc Markdown',
+      language: 'JavaScript, ReactJS'
+    },
+    {
+      url: 'https://codepen.io/curlybraces/pen/MRjOrJ',
+      name: 'Fcc Survey Form',
+      language: 'JavaScript, ReactJS'
+    }
+  ]
+}
+
 export {
   dp,
   year,
@@ -102,5 +177,6 @@ export {
   skills,
   contact,
   experience,
-  education
+  education,
+  portfolio
 }

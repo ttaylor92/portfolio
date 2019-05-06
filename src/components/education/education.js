@@ -26,7 +26,7 @@ const Education = props => {
   }
 
   return(
-    <div className="education">
+    <div id="education">
       <h3>Education</h3>
       <VerticalTimeline layout="1-column">
         {elementMap()}
