@@ -11,12 +11,11 @@
   .dp{
     width: 70%;
     border-radius: 200px;
-    margin-top: 80px;
+    margin: 40px auto 0px auto;
   }
 
   h1 {
-    font-family: "Playfair Display",
-    Georgia, serif;
+    font-family: "Playfair Display",Georgia, serif;
     margin-top: 20px;
     font-weight: 600;
     color: grey;
@@ -25,6 +24,7 @@
   ul{ list-style: none; padding: 0; }
 
   .nav-items{
+    width: inherit;
     text-transform: uppercase;
     margin-top: 40px;
 
@@ -39,8 +39,7 @@
   }
 
   .sm-icons{
-    margin-top: 50px;
-    margin-left: 46px;
+    margin: 50px 0px auto 50px;
     display: flex;
     text-align: center;
 
@@ -59,5 +58,13 @@
     }
     a[href="#contact"]:hover{
       text-decoration: none;
+    }
+    .active{
+      font-weight: 500;
+      font-size: 18px !important;
+
+      a{
+        color: black !important;
+      }
     }
 }

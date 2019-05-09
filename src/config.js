@@ -26,7 +26,8 @@ const skills = [
 
 const contact={
   number: '+1876 327 7085',
-  address: 'Port Morant, St Thomas, Jamaica'
+  address: 'Port Morant, St Thomas, Jamaica',
+  email: 'tyronetaylorbiz@gmail.com'
 }
 
 const experience=[

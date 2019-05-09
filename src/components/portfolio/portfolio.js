@@ -106,8 +106,7 @@ export default class Portfolio extends React.Component{
   }
 
   render(){
-    let { github, commits } = this.state;
-    console.log(commits)
+    let { github } = this.state;
     return(
       <div id="portfolio">
         <h3>Portfolio</h3>

@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <SideBar dp={dp} year={year} contact={contact.number}/>
-      <div className="main" data-spy="scroll" data-target="#nav-section" data-offset="0">>
+      <div className="main">
         <Slider />
         <About info={about}/>
         <Skills info={skills}/>

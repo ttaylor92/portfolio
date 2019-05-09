@@ -5,16 +5,16 @@ import './sidebar.scss';
 const SideBar = props => {
 
     return(
-      <div id="sidebar" className="navbar">
+      <div id="sidebar">
         <img className="dp" src={props.dp} alt="dp"/>
         <div>
           <h1>Tyrone Taylor</h1>
           <a href="#contact"><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</a>
           <p><small><i className="fas fa-phone" /> <span style={{ color: '#0099CD'}}>{props.contact}</span></small></p>
         </div>
-        <nav className="nav nav-pills">
+
           <ul className="nav-items" id="nav-section">
-            <li><a className="nav-link" href="#">Home</a></li>
+            <li><a className="nav-link" href="#home">Home</a></li>
             <li><a className="nav-link" href="#about">About</a></li>
             <li><a className="nav-link" href="#skills">Skills</a></li>
             <li><a className="nav-link" href="#experience">Experience</a></li>
@@ -22,7 +22,6 @@ const SideBar = props => {
             <li><a className="nav-link" href="#portfolio">Portfolio</a></li>
             <li><a className="nav-link" href="#contact">Contact</a></li>
           </ul>
-        </nav>
 
         <ul className="sm-icons">
           <li><a href="https://www.freecodecamp.org/ttaylor" target="_blank" rel="noopener noreferrer">
