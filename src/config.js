@@ -3,11 +3,16 @@ const dp = 'images/dp.JPG';
 
 const about = {
   title: 'Who am I?',
-  body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  body: [
+    "I am someone who is driven by my interests; as long as my interest in a topic of any kind I am focused on learning about it wether if it is for work or hobbie wise. ",
+    "I absolutely love programming and the all things that can be done with it. ",
+    "My hobbies, apart from coding, include gaming, reading novels and watching videos; wether it is cooking videos, movies and different kinds of series. ",
+    "Graphic Design is an hobbie that I took up a while back. Being able to create things just of what I have pictured in my mind is something that I enjoyed."
+   ]
 }
 
 const skills = [
-  ['lor body'],
+  ['The languages/applications that I have used before and are using currently. I do look foward to increasing the count very soon.'],
   [
     {type: 'ReactJS', level: 68},
     {type: 'Angular', level: 20},
