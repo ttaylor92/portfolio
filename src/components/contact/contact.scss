@@ -7,12 +7,10 @@ $marg: 20px;
   .flex-container{
     display: flex;
 
-    .left{
-      width: 50%;
-
       div{
         display: flex;
         margin-top: 30px;
+        margin-left: 50px;
 
         i{
           font-size: 40px;
@@ -29,29 +27,16 @@ $marg: 20px;
           font-size: 15px;
         }
       }
-    }
+  }
+}
 
-    .right{
-      margin-left: 40px;
-      width: 50%;
+@media only screen and(max-width: 1125px){
+  #contact{
+    .flex-container{
+      display: block;
 
       div{
-        margin-top: $marg;
-
-        input{
-          height: 54px;
-          font-size: 16px;
-          font-weight: 400;
-        }
-
-        textarea{
-          height: 200px;
-        }
-      }
-
-      button{
-        margin-top: $marg;
-        width: 25%;
+        margin-left: 10px;
       }
     }
   }

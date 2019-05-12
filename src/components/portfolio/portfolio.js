@@ -1,5 +1,4 @@
 import React from 'react';
-//import axios from 'axios';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import './portfolio.scss';
@@ -36,7 +35,6 @@ export default class Portfolio extends React.Component{
     let template = (
       <div className="loader">
         <div className="spinner-border text-primary" role="status">
-          <span className="sr-only">Loading...</span>
         </div>
       </div>
     )
@@ -110,10 +108,7 @@ export default class Portfolio extends React.Component{
     return(
       <div id="portfolio">
         <h3>Portfolio</h3>
-        <Tabs
-          defaultTab="one"
-          onChange={(tabId) => { console.log(tabId) }}
-        >
+        <Tabs defaultTab="one">
           <TabList>
             <Tab tabFor="one">Github</Tab>
             <Tab tabFor="two">CodePen</Tab>

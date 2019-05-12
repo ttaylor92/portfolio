@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import sal from 'sal.js';
 
-import { dp, year, about, skills, contact, experience, education,portfolio } from './config.js';
+import { dp, year, about, skills, contact, experience, education, portfolio } from './config.js';
 
 //components
 import Slider from './components/slider/slider.js';
@@ -13,12 +13,12 @@ import Portfolio from './components/portfolio/portfolio.js';
 import Contact from './components/contact/contact.js';
 import Experience from './components/experience/experience.js';
 import Education from './components/education/education.js';
+import Nav from './components/nav/nav.js';
 
-const API_PATH = './api/index.php';
-
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <Nav />
       <SideBar dp={dp} year={year} contact={contact.number}/>
       <div className="main">
         <Slider />
@@ -27,7 +27,10 @@ function App() {
         <Experience info={experience} />
         <Education info={education} />
         <Portfolio codepen={portfolio.codepen}/>
-        <Contact path={API_PATH} info={contact} />
+        <Contact info={contact} />
+        <div className="arrow-top btn btn-primary">
+          <i className="fas fa-arrow-up"></i>
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const SideBar = props => {
         </div>
 
           <ul className="nav-items" id="nav-section">
-            <li><a className="nav-link" href="#home">Home</a></li>
+            <li className="active"><a className="nav-link" href="#home">Home</a></li>
             <li><a className="nav-link" href="#about">About</a></li>
             <li><a className="nav-link" href="#skills">Skills</a></li>
             <li><a className="nav-link" href="#experience">Experience</a></li>

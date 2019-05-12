@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en" style="scroll-behavior: smooth; padding: 0;">
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/images/1.png" />
@@ -47,9 +47,20 @@
   <script>
     $('document').ready(function(){
       var links = $('.nav-link');
+      var button = $('.arrow-top');
+
+      button.on("click", function(){
+           $(window).scrollTop(0);
+      });
 
       $(window).scroll(function(){
         var scrollBarLocation = $(this).scrollTop();
+
+        if(scrollBarLocation > 0){
+          button.addClass('display');
+        } else {
+          button.removeClass('display');
+        }
 
         links.each(function(){
 

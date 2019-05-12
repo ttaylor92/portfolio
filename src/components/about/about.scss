@@ -34,3 +34,21 @@
   }
 
 }
+
+@media only screen and(max-width: 780px){
+  #about{
+    .flex-container{
+      display: block;
+
+      .box{
+        width: 100%;
+      }
+      .one{
+        margin-bottom: 20px;
+      }
+      .two{
+        margin-left: 0;
+      }
+    }
+  }
+}
