@@ -15,6 +15,8 @@ const skills = [
   ['The languages/applications that I have used before and are using currently. I do look foward to increasing the count very soon.'],
   [
     {type: 'ReactJS', level: 68},
+    {type: 'NodeJS', level: 40},
+    {type: 'React-Redux', level: 40},
     {type: 'Angular', level: 20},
     {type: 'Javascript', level: 50},
     {type: 'Bootstrap', level: 40},

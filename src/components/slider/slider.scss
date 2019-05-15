@@ -1,23 +1,30 @@
-.slider-img{
-    height: 100vh;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-}
+@import "../variables.scss";
 
-@media only screen and(max-width: 1200px){
-  .slider-img{
-    height: 80vh;
-  }
-}
+// .slider-img{
+//     height: 100vh;
+//     background-size: cover !important;
+//     background-repeat: no-repeat !important;
+// }
+//
+// @media only screen and(max-width: 1200px){
+//   .slider-img{
+//     height: 80vh;
+//   }
+// }
+//
+// @media only screen and(max-width: 800px){
+//   .slider-img{
+//     height: 60vh;
+//   }
+// }
+//
+// @media only screen and(max-width: 680px){
+//   .slider-img{
+//     height: 40vh;
+//   }
+// }
 
-@media only screen and(max-width: 800px){
-  .slider-img{
-    height: 60vh;
-  }
-}
-
-@media only screen and(max-width: 680px){
-  .slider-img{
-    height: 40vh;
-  }
+#particles-js{
+  background: $bg-grey;
+  height: 100vh;
 }

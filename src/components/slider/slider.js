@@ -19,11 +19,7 @@ const Slider = () => {
 
     return(
       <div className="active" id="home">
-        <Slick {...settings}>
-          <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
-          <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
-          <div><div className='slider-img' style={{ background: 'url(https://via.placeholder.com/1366)'}}><h1>1</h1></div></div>
-        </Slick>
+        <div id="particles-js"></div>
       </div>
     )
 }
