@@ -44,6 +44,9 @@ const SideBar = props => {
           </a></li>
         </ul>
 
+        <p style={{ marginBottom: '0', marginTop: '10px' }}>
+          <small>Made with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a></small>
+        </p>
         <p><small>&copy; Copyright {props.year} All rights reserved</small></p>
       </div>
     )

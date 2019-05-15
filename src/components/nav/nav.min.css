@@ -1,1 +1,1 @@
-#nav{display:none}@media only screen and (max-width: 680px){#nav{display:block;text-align:center}#nav ul{list-style:none;padding:0;margin:0}}
+#nav{display:none}#nav .nav-link{color:white}#nav .nav-link:hover{color:lightblue;text-decoration:underline}@media only screen and (max-width: 680px){#nav{display:block;text-align:center}#nav ul{list-style:none;padding:0;margin:0}}

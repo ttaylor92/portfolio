@@ -3,6 +3,8 @@ import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import './portfolio.scss';
 
+import Accordian from './accordian/accordian.js';
+
 const axios = require('axios');
 
 export default class Portfolio extends React.Component{
@@ -75,6 +77,42 @@ export default class Portfolio extends React.Component{
     }
   }
 
+  accordianMap = type =>{
+    switch (type) {
+      case this.state.github:
+        if(this.state.github){
+          return this.state.github.map((item, i) => (
+            <Accordian
+              title={item.name}
+              avatar={item.owner.avatar_url}
+              created={item.created_at.slice(0, item.created_at.length - 10)}
+              language={item.language}
+              commits={this.state.commits[i]}
+              gitUrl={item.svn_url}
+              key={i}
+              type="Github"
+              icon="fab fa-github"
+            />
+          ))
+        }
+        break
+      case "Pen":
+        return this.props.codepen.map((item, i) => (
+          <Accordian
+            title={item.name}
+            avatar="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
+            language={item.language}
+            gitUrl={item.url}
+            key={i}
+            type="Codpen"
+            icon="fab fa-codepen"
+          />
+        ))
+      default:
+        return null;
+    }
+  }
+
   //codepen info map
   penMap = () => {
     return this.props.codepen.map((item, i) => (
@@ -116,11 +154,13 @@ export default class Portfolio extends React.Component{
           <TabPanel tabId="one">
             <div className="row">
               {this.loader(github)}
+              {this.accordianMap(github)}
             </div>
           </TabPanel>
           <TabPanel tabId="two">
             <div className="row">
               {this.penMap()}
+              {this.accordianMap("Pen")}
             </div>
           </TabPanel>
         </Tabs>

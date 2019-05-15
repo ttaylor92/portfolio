@@ -1,0 +1,25 @@
+.accordian{
+  display: none;
+  width: 100%;
+  padding: 10px 20px;
+
+  .accordianHead{
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .flex{
+    margin-bottom: 70px;
+
+    img{ float: left; }
+
+    a{ float: right; }
+  }
+}
+
+@media only screen and(max-width: 942px){
+  .accordian{
+    display: block;
+  }
+}

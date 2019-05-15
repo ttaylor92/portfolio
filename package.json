@@ -18,12 +18,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.0",
-    "react-slick": "^0.24.0",
     "react-vertical-timeline-component": "^2.3.1",
-    "react-web-tabs": "^1.0.1",
-    "sal.js": "^0.5.0",
-    "simple-carousel": "^1.2.0",
-    "slick-carousel": "^1.8.1"
+    "react-web-tabs": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

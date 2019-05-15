@@ -23,6 +23,7 @@ const skills = [
     {type: 'CSS', level: 70},
     {type: 'jQuery', level: 30},
     {type: 'PHP', level: 25},
+    {type: 'MySQL', level: 15},
     {type: 'Photoshop', level: 60},
     {type: 'After Effects', level: 50},
     {type: 'Illustrator', level: 50},

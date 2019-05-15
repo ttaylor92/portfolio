@@ -31,7 +31,10 @@ export default class Nav extends React.Component {
             </ul>
           </div>
         </div>
-        <nav className="navbar navbar-dark bg-dark justify-content-end">
+        <nav className="navbar navbar-dark bg-dark">
+          <a className="navbar-brand justify-content-left" href="#">
+            <img src="/images/1.jpg" style={{ borderRadius: '50px',  width:"35px", height:"35px"  }}alt=""/>
+          </a>
           <button className="navbar-toggler" type="button" onClick={this.handleToggle}>
             <span className="navbar-toggler-icon"></span>
           </button>

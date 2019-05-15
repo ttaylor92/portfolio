@@ -1,5 +1,14 @@
 #nav{
   display: none;
+
+  .nav-link{
+    color: white;
+
+    &:hover{
+      color: lightblue;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media only screen and(max-width: 680px){
