@@ -1,20 +1,46 @@
 .accordian{
   display: none;
   width: 100%;
-  padding: 10px 20px;
+  border-top: 1px solid lightgrey;
+  border-bottom: 0;
 
   .accordianHead{
+    line-height: 60px;
+    display: flex;
+
+    h3{
+      flex-grow: 2;
+      margin-top: 10px;
+    }
+
+    div{
+      border-left: 1px solid lightgrey;
+      width: 15%;
+      text-align: center;
+      color: black !important;
+    }
+
     &:hover{
       cursor: pointer;
+      background: #0a5fa3 !important;
+      color: white !important;
+
+      &>div{
+        background: lightgrey !important;
+      }
     }
   }
 
-  .flex{
-    margin-bottom: 70px;
+  .info{
+    padding: 20px;
 
-    img{ float: left; }
+    .flex{
+      margin-bottom: 70px;
 
-    a{ float: right; }
+      img{ float: left; }
+
+      a{ float: right; }
+    }
   }
 }
 

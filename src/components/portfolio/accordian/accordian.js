@@ -7,27 +7,48 @@ export default class Accordian extends React.Component {
     super(props)
 
     this.state={
-      open: "none",
-      border: '1px solid grey',
-      arrow: 'fas fa-chevron-up'
+      arrow: 'fas fa-chevron-up',
+      style: {
+        color: '#0a5fa3'
+      },
+      display: 'none',
+      grey: '#fff'
     }
   }
 
-  clickHandle = () => (this.state.open === 'none') ?
-        this.setState({ open: 'block', border: "4px solid lightblue", arrow: 'fas fa-chevron-down' })
+  clickHandle = () => (this.state.display === 'none') ?
+        this.setState({
+          arrow: 'fas fa-chevron-down',
+          style:{
+            background: '#0a5fa3',
+            color: '#fff'
+          },
+          display: 'block',
+          grey: 'lightgrey'
+         })
         :
-        this.setState({ open: 'none', border: "1px solid grey", arrow: 'fas fa-chevron-up' });
+        this.setState({
+          arrow: 'fas fa-chevron-up',
+          style: {
+            background: '#fff',
+            color: '#0a5fa3'
+          },
+          display: 'none',
+          grey: '#fff'
+         });
 
   render(){
-    let { open, border, arrow } = this.state;
-    console.log(open, border)
+    let { arrow, style, display, grey } = this.state;
 
     return(
       <div className="accordian">
-        <div className="accordianHead" onClick={this.clickHandle}>
-          <h3><i className={arrow} style={{ fontSize: '18px' }}></i> {this.props.title}</h3>
+        <div className="accordianHead" onClick={this.clickHandle} style={style}>
+          <h3>{this.props.title}</h3>
+          <div style={{ background: `${grey}` }}>
+            <i className={arrow} style={{ fontSize: '18px' }}></i>
+          </div>
         </div>
-        <div style={{ display: `${open}`}}>
+        <div style={{ display: `${display}` }} className="info">
           {this.props.created && <p>Created at: {this.props.created}</p>}
           <p>Language used: {this.props.language}</p>
           {this.props.commits && <p>Commits: {this.props.commits}</p>}
@@ -38,7 +59,7 @@ export default class Accordian extends React.Component {
             </a>
           </div>
         </div>
-        <hr style={{ margin: '20px 0 0 0', borderTop: `${border}` }}/>
+        {/* <hr style={{ margin: '20px 0 0 0', borderTop: `${border}` }}/> */}
       </div>
     )
   }
