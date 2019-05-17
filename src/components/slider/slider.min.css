@@ -1,1 +1,1 @@
-#particles-js{background:#f2f3f7;height:100vh}
+#home #particles-js{background:#f2f3f7;height:100vh}#home .scroll{position:absolute;text-align:center;bottom:1px;z-index:1;left:50%;margin-left:120px}#home .scroll p{font-size:20px}@media only screen and (max-width: 680px){#home #particles-js{height:95vh}#home .scroll{margin-left:-30px}}

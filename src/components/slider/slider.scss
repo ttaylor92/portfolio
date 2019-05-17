@@ -23,8 +23,33 @@
 //     height: 40vh;
 //   }
 // }
+#home{
 
-#particles-js{
-  background: $bg-grey;
-  height: 100vh;
+  #particles-js{
+    background: $bg-grey;
+    height: 100vh;
+  }
+
+  .scroll{
+    position: absolute;
+    text-align: center;
+    bottom: 1px;
+    z-index: 1;
+    left: 50%;
+    margin-left: 120px;
+
+    p{ font-size: 20px; }
+  }
+}
+
+@media only screen and(max-width: 680px){
+  #home{
+    #particles-js{
+      height: 95vh;
+    }
+
+    .scroll{
+      margin-left: -30px;
+    }
+  }
 }
