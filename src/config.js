@@ -4,9 +4,9 @@ const dp = 'images/dp.JPG';
 const about = {
   title: 'Who am I?',
   body: [
-    "As I am someone who is driven by my interests, I am focused on learning about coding on a whole wether it be for work or hobbie wise. ",
+    "As I am someone who is driven by my interests, I am focused on learning about coding on a whole whether it be for work or hobbie wise. ",
     "I absolutely love programming and the all things that can be done with it. ",
-    "My hobbies, apart from coding, include gaming, reading novels and watching videos; wether it is cooking videos, movies and different kinds of series. ",
+    "My hobbies, apart from coding, include gaming, reading novels and watching videos; whether it is cooking videos, movies and different kinds of series. ",
     "Graphic Design is an hobbie that I took up a while back. Being able to create things just of what I have pictured in my mind is something that I enjoyed."
    ]
 }
