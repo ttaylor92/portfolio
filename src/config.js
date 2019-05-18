@@ -7,7 +7,7 @@ const about = {
     "As I am someone who is driven by my interests, I am focused on learning about coding on a whole whether it be for work or hobbie wise. ",
     "I absolutely love programming and the all things that can be done with it. ",
     "My hobbies, apart from coding, include gaming, reading novels and watching videos; whether it is cooking videos, movies and different kinds of series. ",
-    "Graphic Design is an hobbie that I took up a while back. Being able to create things just of what I have pictured in my mind is something that I enjoyed."
+    "Graphic Design is a hobbie that I took up a while back. Being able to create things just of what I have pictured in my mind is something that I enjoy, which is why I have advanced to programming."
    ]
 }
 

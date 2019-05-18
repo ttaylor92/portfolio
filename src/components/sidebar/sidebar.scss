@@ -75,3 +75,8 @@
     display: none;
   }
 }
+@media only screen and(max-height: 680px){
+  #sidebar{
+    display: none;
+  }
+}

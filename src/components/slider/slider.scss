@@ -58,3 +58,14 @@
     }
   }
 }
+@media only screen and(max-height: 680px){
+  #home{
+    #particles-js{
+      height: 90vh;
+    }
+
+    .scroll{
+      margin-left: -50px;
+    }
+  }
+}
