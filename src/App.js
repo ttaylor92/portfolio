@@ -20,13 +20,14 @@ const App = () => {
       <Nav />
       <SideBar dp={dp} year={year} contact={contact.number}/>
       <div className="main">
-        <Slider />
+        <Slider type="top"/>
         <About info={about}/>
         <Skills info={skills}/>
         <Experience info={experience} />
         <Education info={education} />
         <Portfolio codepen={portfolio.codepen}/>
         <Contact info={contact} />
+        <Slider />
         <div className="arrow-top btn btn-primary">
           <i className="fas fa-arrow-up"></i>
         </div>

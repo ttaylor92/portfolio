@@ -2,7 +2,8 @@ import React from 'react';
 import './slider.scss';
 
 
-const Slider = () => {
+const Slider = props => {
+  if(props.type === "top"){
     return(
       <div className="active" id="home">
         <div id="particles-js"></div>
@@ -12,6 +13,13 @@ const Slider = () => {
         </a>
       </div>
     )
+  } else {
+    return(
+      <div>
+        <div id="particles"></div>
+      </div>
+    )
+  }
 }
 
 export default Slider;
