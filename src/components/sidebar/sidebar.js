@@ -42,6 +42,9 @@ const SideBar = props => {
           <li><a href="https://codepen.io/curlybraces/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-codepen"/>
           </a></li>
+          <li><a href="https://www.behance.net/Tyronetaylor" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-behance"/>
+          </a></li>
         </ul>
 
         <p style={{ marginBottom: '0', marginTop: '10px' }}>
