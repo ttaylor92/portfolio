@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 
+import { Link } from 'react-router-dom';
+
 import { dp, year, about, skills, contact, experience, education, portfolio } from './config.js';
 
 //components
@@ -14,7 +16,7 @@ import Experience from './components/experience/experience.js';
 import Education from './components/education/education.js';
 import Nav from './components/nav/nav.js';
 
-const App = () => {
+const Home = () => {
   return (
     <div className="App">
       <Nav />
@@ -25,7 +27,7 @@ const App = () => {
         <Skills info={skills}/>
         <Experience info={experience} />
         <Education info={education} />
-        <Portfolio codepen={portfolio.codepen}/>
+        <Portfolio codepen={portfolio.codepen} live={portfolio.live} />
         <Contact info={contact} />
         <Slider />
         <div className="arrow-top btn btn-primary">
@@ -36,4 +38,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Home;

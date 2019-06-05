@@ -4,6 +4,7 @@ import 'react-web-tabs/dist/react-web-tabs.css';
 import './portfolio.scss';
 
 import Accordian from './accordian/accordian.js';
+import Live from '../../live/live.js';
 
 const axios = require('axios');
 
@@ -123,7 +124,11 @@ export default class Portfolio extends React.Component{
             marginLeft: '20px'
           }}
           key={i}>
-        <img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" className="card-img-top codepen-img" alt="logo" />
+        <img
+          src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
+          className="card-img-top codepen-img"
+          alt="logo"
+        />
         <div className="card-body">
           <h5 className="card-title">{item.name}</h5>
           <p className="card-text">Language used: {item.language}</p>
@@ -150,6 +155,7 @@ export default class Portfolio extends React.Component{
           <TabList>
             <Tab tabFor="one">Github</Tab>
             <Tab tabFor="two">CodePen</Tab>
+            <Tab tabFor="three">Live</Tab>
           </TabList>
           <TabPanel tabId="one">
             <div className="row">
@@ -161,6 +167,11 @@ export default class Portfolio extends React.Component{
             <div className="row">
               {this.penMap()}
               {this.accordianMap("Pen")}
+            </div>
+          </TabPanel>
+          <TabPanel tabId="three">
+            <div className="row">
+              <Live panel={true} live={this.props.live}/>
             </div>
           </TabPanel>
         </Tabs>

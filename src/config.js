@@ -176,6 +176,28 @@ const portfolio = {
       name: 'Fcc Survey Form',
       language: 'JavaScript, ReactJS'
     }
+  ],
+  live: [
+    {
+      name: 'Fcc WikiSearch',
+      path: 'wikisearch'
+    },
+    {
+      name: 'Fcc JavaScript Calculator',
+      path: 'calculator'
+    },
+    {
+      name: 'Fcc Pomodoro Clock',
+      path: 'clock'
+    },
+    {
+      name: 'Fcc Drummachine',
+      path: 'drummachine'
+    },
+    {
+      name: 'Fcc Markdown',
+      path: 'markdown'
+    }
   ]
 }
 
