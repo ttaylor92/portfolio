@@ -18,6 +18,9 @@ const Live = props =>{
         />
         <div className="card-body" style={{ textAlign: "center" }}>
           <h5 className="card-title">{item.name}</h5>
+          <div className="card-text">
+            {item.dependencie && <p>Dependencies: {item.dependencie}</p>}
+          </div>
           <Link to={item.path} className="btn btn-primary">
             View Live   <i className="fab fa-react"></i>
           </Link>

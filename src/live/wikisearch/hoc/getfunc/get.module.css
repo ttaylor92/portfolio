@@ -1,0 +1,19 @@
+.searchCont{ text-align: center;}
+
+.main{
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.main:nth-child(even){
+  background: #E1E1E1;
+}
+
+.main a{
+  text-decoration: none;
+  font-style: italic;
+}
+.main a:hover{
+  text-decoration: none;
+}

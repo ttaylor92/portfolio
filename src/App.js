@@ -1,8 +1,6 @@
 import React from 'react';
 import './App.scss';
 
-import { Link } from 'react-router-dom';
-
 import { dp, year, about, skills, contact, experience, education, portfolio } from './config.js';
 
 //components

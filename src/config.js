@@ -1,6 +1,9 @@
 const year = (new Date()).getFullYear();
 const dp = 'images/dp.JPG';
 
+//wikisearch api URL
+const URL = 'https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=';
+
 const about = {
   title: 'Who am I?',
   body: [
@@ -180,7 +183,8 @@ const portfolio = {
   live: [
     {
       name: 'Fcc WikiSearch',
-      path: 'wikisearch'
+      path: 'wikisearch',
+      dependencie: 'Redux, React-Redux'
     },
     {
       name: 'Fcc JavaScript Calculator',
@@ -188,7 +192,8 @@ const portfolio = {
     },
     {
       name: 'Fcc Pomodoro Clock',
-      path: 'clock'
+      path: 'clock',
+      dependencie: 'Moment.js'
     },
     {
       name: 'Fcc Drummachine',
@@ -196,7 +201,8 @@ const portfolio = {
     },
     {
       name: 'Fcc Markdown',
-      path: 'markdown'
+      path: 'markdown',
+      dependencie: 'Markdown.js'
     }
   ]
 }
@@ -204,6 +210,7 @@ const portfolio = {
 export {
   dp,
   year,
+  URL,
   about,
   skills,
   contact,
