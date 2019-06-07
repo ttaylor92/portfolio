@@ -1,6 +1,9 @@
 import React from 'react';
 import './drummachine.scss';
 
+//Live
+import Live from '../live.js';
+
 const firstBank= [
   ['First Bank'],
   [{
@@ -244,6 +247,7 @@ export default class DrumMachine extends React.Component {
 
     return(
       <div className="drum-main">
+        <Live type="preview" />
         <div id="drum-machine" style={{margin: 'auto'}}>
           <h1 style={{textAlign: 'center'}}>DrumMachine - Bank: {bank[0]}</h1>
           <div>

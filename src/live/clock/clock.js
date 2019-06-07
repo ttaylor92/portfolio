@@ -1,6 +1,9 @@
 import React from 'react';
 import './clock.scss';
 
+//Live
+import Live from '../live.js';
+
 let moment =  require('moment');
 
 const SetTimer = ({ type, value, handler }) =>(
@@ -98,6 +101,7 @@ export default class Clock extends React.Component{
 
     return(
       <div className="clock-main">
+        <Live type="preview" />
         <h1>Pomodoro Clock</h1>
         <div className='timerContainer'>
           <SetTimer type='break' value={breakValue} handler={this.setTimerFunc}/>

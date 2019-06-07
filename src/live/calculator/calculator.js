@@ -1,6 +1,9 @@
 import React from 'react';
 import './calculator.scss';
 
+//Live
+import Live from '../live.js';
+
 const keyMap =[
   { id:"zero", name:"0"},
   { id:"one", name:"1"},
@@ -123,6 +126,7 @@ export default class Calculator extends React.Component {
     let { display } = this.state;
     return(
       <div className="cal-main">
+        <Live type="preview" />
         <div className='container'>
           <Display display={display} />
           <div id='grid-container'>{this.buttonMap()}</div>

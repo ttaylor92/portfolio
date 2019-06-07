@@ -171,7 +171,7 @@ export default class Portfolio extends React.Component{
           </TabPanel>
           <TabPanel tabId="three">
             <div className="row">
-              <Live panel={true} live={this.props.live}/>
+              <Live type="panel" live={this.props.live}/>
             </div>
           </TabPanel>
         </Tabs>

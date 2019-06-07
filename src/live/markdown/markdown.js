@@ -1,6 +1,9 @@
 import React from 'react';
 import './mardown.scss';
 
+//Live
+import Live from '../live.js';
+
 let placeholder =`# Test
 ## test 2
 *   This is the first list item.
@@ -57,6 +60,7 @@ export default class Markdown extends React.Component {
   render() {
     return (
       <div className="markdown">
+        <Live type="preview" />
         <div style={{ textAlign:'center', borderBottom: '2px solid #E4E4E4' }}>
             <h2 style={{ margin: '5px' }}>FCC Markdown</h2>
         </div>
