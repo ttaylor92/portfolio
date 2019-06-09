@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import './sidebar.scss';
 
@@ -14,13 +15,77 @@ const SideBar = props => {
         </div>
 
           <ul className="nav-items" id="nav-section">
-            <li className="active"><a className="nav-link" href="#home">Home</a></li>
-            <li><a className="nav-link" href="#about">About</a></li>
-            <li><a className="nav-link" href="#skills">Skills</a></li>
-            <li><a className="nav-link" href="#experience">Experience</a></li>
-            <li><a className="nav-link" href="#education">Education</a></li>
-            <li><a className="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a className="nav-link" href="#contact">Contact</a></li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >Home</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >About</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >Skills</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="experience"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >Experience</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="education"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >Education</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                >Portfolio</Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                className="nav-link"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration= {500}
+                offset={80}
+                >Contact</Link>
+            </li>
           </ul>
 
         <ul className="sm-icons">

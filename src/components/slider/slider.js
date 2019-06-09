@@ -1,16 +1,23 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import './slider.scss';
 
 import Particles from 'react-particles-js';
 
 const Slider = props =>{
-  if(props.type == "top"){
+  if(props.type === "top"){
     return(
       <div id="home">
-        <a className="scroll" href="#about">
-          <p style={{ margin: '0' }}>Scroll down</p>
-          <i className="fas fa-angle-double-down"></i>
-        </a>
+        <Link
+          className="scroll"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration= {500}>
+            <p style={{ margin: '0' }}>Scroll down</p>
+            <i className="fas fa-angle-double-down"></i>
+          </Link>
         <Particles
           className="particles-js"
           params={{
@@ -234,25 +241,5 @@ const Slider = props =>{
     )
   }
 }
-
-// const Slider = props => {
-//   if(props.type === "top"){
-//     return(
-//       <div className="active" id="home">
-//         <div id="particles-js"></div>
-//         <a className="scroll" href="#about">
-//           <p style={{ margin: '0' }}>Scroll down</p>
-//           <i className="fas fa-angle-double-down"></i>
-//         </a>
-//       </div>
-//     )
-//   } else {
-//     return(
-//       <div>
-//         <div id="particles"></div>
-//       </div>
-//     )
-//   }
-// }
 
 export default Slider;

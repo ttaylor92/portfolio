@@ -35,6 +35,10 @@
 
       .nav-link{
         padding: 0;
+
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
   }
