@@ -2,7 +2,7 @@
 
 #home{
 
-  #particles-js{
+  .particles-js{
     background: $bg-grey;
     height: 100vh;
   }
@@ -34,7 +34,7 @@
   }
 }
 
-#particles{
+.particles{
   background: $bg-grey;
   height: 30vh;
 }
