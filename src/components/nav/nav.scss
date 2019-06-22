@@ -11,7 +11,7 @@
   }
 }
 
-@media only screen and(max-width: 680px){
+@media (max-width: 680px){
   #nav{
     display: block;
     text-align: center;
@@ -23,7 +23,7 @@
     }
   }
 }
-@media only screen and(max-height: 680px){
+@media (max-height: 680px){
   #nav{
     display: block;
     text-align: center;

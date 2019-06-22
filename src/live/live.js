@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './live.scss';
+import LivePanel from './livepanel.js';
 
 const Live = props =>{
   switch (props.type) {
@@ -33,7 +34,11 @@ const Live = props =>{
     case "preview":
       return(
         <div className="live-main">
-          <nav className="navbar fixed-top navbar-dark bg-primary">
+          <nav
+            className="navbar fixed-top navbar-light"
+            style={{
+              backgroundColor: "white",
+              borderBottom: "1px solid grey" }}>
             <Link to="/">
               <img
                 src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
@@ -47,14 +52,16 @@ const Live = props =>{
                 <Link to="/" className="nav-link">Homepage</Link>
               </li>
               <li className="nav-item">
-                <Link to="/live" className="nav-link">Live Homepage</Link>
+                <Link to="/live" className="nav-link">Live Panel</Link>
               </li>
             </ul>
           </nav>
         </div>
       )
     default:
-      return null
+      return (
+        <LivePanel />
+      )
 
   }
 }

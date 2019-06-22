@@ -40,7 +40,7 @@
   height: 30vh;
 }
 
-@media only screen and(max-width: 680px){
+@media (max-width: 680px){
   #home{
     #particles-js{
       height: 90vh;
@@ -51,7 +51,7 @@
     }
   }
 }
-@media only screen and(max-height: 680px){
+@media (max-height: 680px){
   #home{
     #particles-js{
       height: 90vh;

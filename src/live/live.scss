@@ -1,14 +1,14 @@
 .live-main{
-
+  
   .navbar-nav{
     flex-direction: inherit;
 
     .nav-item{
       margin-left: 10px;
-      
+
       .nav-link{
         &:hover{
-          color: white;
+          color: black;
         }
       }
     }

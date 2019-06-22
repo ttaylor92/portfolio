@@ -30,7 +30,7 @@ $marg: 20px;
   }
 }
 
-@media only screen and(max-width: 1125px){
+@media (max-width: 1125px){
   #contact{
     .flex-container{
       display: block;

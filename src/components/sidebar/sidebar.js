@@ -5,6 +5,8 @@ import './sidebar.scss';
 
 const SideBar = props => {
 
+const amount = 500;
+
     return(
       <div id="sidebar">
         <img className="dp" src={props.dp} alt="dp"/>
@@ -22,7 +24,7 @@ const SideBar = props => {
                 to="home"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >Home</Link>
             </li>
             <li>
@@ -32,7 +34,7 @@ const SideBar = props => {
                 to="about"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >About</Link>
             </li>
             <li>
@@ -42,7 +44,7 @@ const SideBar = props => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >Skills</Link>
             </li>
             <li>
@@ -52,7 +54,7 @@ const SideBar = props => {
                 to="experience"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >Experience</Link>
             </li>
             <li>
@@ -62,7 +64,7 @@ const SideBar = props => {
                 to="education"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >Education</Link>
             </li>
             <li>
@@ -72,7 +74,7 @@ const SideBar = props => {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 >Portfolio</Link>
             </li>
             <li>
@@ -82,7 +84,7 @@ const SideBar = props => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                duration= {500}
+                duration= {amount}
                 offset={80}
                 >Contact</Link>
             </li>
