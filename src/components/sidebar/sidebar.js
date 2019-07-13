@@ -12,7 +12,16 @@ const amount = 500;
         <img className="dp" src={props.dp} alt="dp"/>
         <div>
           <h1>Tyrone Taylor</h1>
-          <a href="#contact"><span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</a>
+          <Link
+            activeClass="active"
+            className="nav-link"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration= {amount}
+            offset={80}>
+            <span><i className="fas fa-envelope-open-text" /></span> tyronetaylorbiz@gmail.com</Link>
+            
           <p><small><i className="fas fa-phone" /> <span style={{ color: '#0099CD'}}>{props.contact}</span></small></p>
         </div>
 

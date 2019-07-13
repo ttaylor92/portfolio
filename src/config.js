@@ -182,11 +182,6 @@ const portfolio = {
   ],
   live: [
     {
-      name: 'Fcc WikiSearch',
-      path: 'wikisearch',
-      dependencie: 'Redux, React-Redux'
-    },
-    {
       name: 'Fcc JavaScript Calculator',
       path: 'calculator'
     },

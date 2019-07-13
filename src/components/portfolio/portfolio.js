@@ -175,9 +175,6 @@ export default class Portfolio extends React.Component{
             </div>
           </TabPanel>
         </Tabs>
-        <div className="live-icon">
-          <i className="fab fa-react"></i>
-        </div>
       </div>
     )
   }

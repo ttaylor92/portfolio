@@ -10,7 +10,7 @@ $marg: 20px;
       div{
         display: flex;
         margin-top: 30px;
-        margin-left: 160px;
+        margin-left: 10%;
 
         i{
           font-size: 40px;
@@ -30,7 +30,7 @@ $marg: 20px;
   }
 }
 
-@media (max-width: 1125px){
+@media (max-width: 1250px){
   #contact{
     .flex-container{
       display: block;

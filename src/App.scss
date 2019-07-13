@@ -17,6 +17,30 @@
     }
   }
 
+  .live-icon{
+    position: fixed;
+    top: 40%;
+    right: -200px;
+    width: 150px;
+    text-align: inherit !important;
+    transition: ease all 1s;
+    transform: translateX(0);
+
+    a{
+      color: white;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    &:hover{
+      cursor: pointer;
+      // right: -1px !important;
+      transform: translateX(-90px);
+    }
+  }
+
   .display{
     display: block !important;
   }

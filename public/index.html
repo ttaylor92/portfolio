@@ -8,7 +8,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!-- Font Awesome -->
@@ -40,6 +40,16 @@
           button.addClass('display');
         } else {
           button.removeClass('display');
+        }
+
+        if(scrollBarLocation <= 950){
+         $('.live-icon').animate({
+           right: "-200px"
+         },200)
+       } else {
+          $('.live-icon').animate({
+            right: "-115px"
+          },100)
         }
 
         links.each(function(){

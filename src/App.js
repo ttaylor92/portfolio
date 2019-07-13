@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import { Link } from 'react-router-dom';
 
 import { dp, year, about, skills, contact, experience, education, portfolio } from './config.js';
 
@@ -14,26 +15,30 @@ import Experience from './components/experience/experience.js';
 import Education from './components/education/education.js';
 import Nav from './components/nav/nav.js';
 
-const Home = () => {
-  return (
-    <div className="App">
-      <Nav />
-      <SideBar dp={dp} year={year} contact={contact.number}/>
-      <div className="main">
-        <Slider type="top"/>
-        <About info={about}/>
-        <Skills info={skills}/>
-        <Experience info={experience} />
-        <Education info={education} />
-        <Portfolio codepen={portfolio.codepen} live={portfolio.live} />
-        <Contact info={contact} />
-        <Slider />
-        <div className="arrow-top btn btn-primary">
-          <i className="fas fa-arrow-up"></i>
+export default class Home extends React.Component {
+
+  render(){
+    return (
+      <div className="App">
+        <Nav />
+        <SideBar dp={dp} year={year} contact={contact.number}/>
+        <div className="main">
+          <Slider type="top"/>
+          <About info={about}/>
+          <Skills info={skills}/>
+          <Experience info={experience} />
+          <Education info={education} />
+          <Portfolio codepen={portfolio.codepen} live={portfolio.live} />
+          <Contact info={contact} />
+          <Slider />
+          <div className="live-icon btn btn-primary">
+            <Link to="/live"><i className="fab fa-react"/> Live Panel</Link>
+          </div>
+          <div className="arrow-top btn btn-primary">
+            <i className="fas fa-arrow-up"/>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default Home;
