@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './livepanel.scss';
 import PanelLinks from './panelLinks.js';
 import { portfolio } from '../config.js';
-import $ from 'jquery';
+//import $ from 'jquery';
 
 export default class LivePanel extends React.Component{
   constructor(props){
@@ -30,10 +30,6 @@ export default class LivePanel extends React.Component{
     ))
   }
 
-  disabled(){
-    $(".livePanels").attr("disabled", "disabled").off('click');
-  }
-
   render(){
     let { display } = this.state;
 
@@ -56,7 +52,6 @@ export default class LivePanel extends React.Component{
 
         <div className="body">
           {this.bodyRender()}
-          {this.disabled()}
         </div>
       </div>
     )
