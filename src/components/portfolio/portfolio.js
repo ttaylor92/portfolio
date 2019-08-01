@@ -109,6 +109,19 @@ export default class Portfolio extends React.Component{
             icon="fab fa-codepen"
           />
         ))
+      case "Live":
+        return this.props.live.map((item, i) => (
+          <Accordian
+            title={item.name}
+            avatar="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+            gitUrl={item.url}
+            key={i}
+            dependencie={item.dependencie}
+            type="Live"
+            path={item.path}
+            icon="fab fa-react"
+          />
+        ))
       default:
         return null;
     }
@@ -172,6 +185,7 @@ export default class Portfolio extends React.Component{
           <TabPanel tabId="three">
             <div className="row">
               <Live type="panel" live={this.props.live}/>
+              {this.accordianMap("Live")}
             </div>
           </TabPanel>
         </Tabs>

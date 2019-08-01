@@ -42,8 +42,8 @@
 
 @media (max-width: 680px){
   #home{
-    #particles-js{
-      height: 90vh;
+    .particles-js{
+      height: 85vh;
     }
 
     .scroll{
@@ -51,10 +51,10 @@
     }
   }
 }
-@media (max-height: 680px){
+@media (max-height: 1100px){
   #home{
-    #particles-js{
-      height: 90vh;
+    .particles-js{
+      height: 95vh;
     }
 
     .scroll{
