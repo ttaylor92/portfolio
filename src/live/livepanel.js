@@ -22,8 +22,8 @@ export default class LivePanel extends React.Component{
       <div key={i} id={item.name} className='livePanels' style={{ marginTop: '30px' }}>
         <h2 style={{ fontWeight: '500' }}>{item.name}</h2>
         <hr/>
-        <img src="https://via.placeholder.com/800" alt="screenshot" style={{ margin: 'auto', display: 'block' }}/>
-        <div style={{ width: '800px', margin: '15px auto' }}>
+        <img src="https://via.placeholder.com/800" alt="screenshot"/>
+        <div style={{ width: '800px', marginTop: '15px'}}>
           <Link to={`${item.path}`}>Veiw Live</Link>
         </div>
       </div>
