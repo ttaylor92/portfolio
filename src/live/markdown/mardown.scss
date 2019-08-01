@@ -1,11 +1,29 @@
 .markdown{
-  textarea {
-    width: 60%;
-    height: 500px;
+  margin: 80px auto 0 auto;
+
+  .mark-div{
+    text-align: center;
+
+    textarea {
+      width: 80%;
+      height: 500px;
+    }
   }
 
   img{
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (max-width: 680px){
+  .markdown{
+    textarea{
+      width: 90%;
+    }
+
+    .preview{
+      margin-top: 20px;
+    }
   }
 }

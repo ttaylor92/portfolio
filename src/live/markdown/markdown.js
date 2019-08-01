@@ -59,23 +59,29 @@ export default class Markdown extends React.Component {
 
   render() {
     return (
-      <div className="markdown">
+      <div>
         <Live type="preview" />
-        <div style={{ textAlign:'center', borderBottom: '2px solid #E4E4E4' }}>
-            <h2 style={{ margin: '5px' }}>FCC Markdown</h2>
+        <div className="markdown">
+          <div style={{ textAlign:'center', borderBottom: '2px solid #E4E4E4' }}>
+              <h2 style={{ margin: '5px' }}>FCC Markdown</h2>
+          </div>
+          <form>
+            <div className="mark-div">
+              <div>
+                <h3>Editor</h3>
+                <textarea
+                  id='editor'
+                  placeholder='Enter Markdown'
+                  onChange={this.handleChange}
+                  value={this.state.input}/>
+              </div>
+              <div className="preview">
+                <h3>Preview</h3>
+                <MarkPreview markdown={this.state.input}/>
+              </div>
+            </div>
+          </form>
         </div>
-        <form>
-          <div style={{ textAlign: 'center'}}>
-            <div >
-              <label for='editor'><h3>Editor</h3></label>
-              <textarea id='editor' placeholder='Enter Markdown' onChange={this.handleChange} value={this.state.input}/>
-            </div>
-            <div>
-             <h3>Preview</h3>
-             <MarkPreview markdown={this.state.input}/>
-            </div>
-           </div>
-         </form>
       </div>
     );
   }

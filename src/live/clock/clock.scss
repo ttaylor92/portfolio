@@ -50,3 +50,14 @@
        }
   }
 }
+
+@media (max-width: 680px){
+	.clock-main{
+		margin: 80px auto 0 auto;
+		width: 90vw;
+
+		#break-div, #session-div{
+			float: none !important;
+		}
+	}
+}

@@ -127,6 +127,9 @@ export default class Calculator extends React.Component {
     return(
       <div className="cal-main">
         <Live type="preview" />
+        <div className="header-text">
+          <h2>Javascript Calculator</h2>
+        </div>
         <div className='container'>
           <Display display={display} />
           <div id='grid-container'>{this.buttonMap()}</div>

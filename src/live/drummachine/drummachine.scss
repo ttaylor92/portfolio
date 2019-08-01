@@ -98,3 +98,29 @@
     border-radius: 50%;
   }
 }
+
+/*Media queries*/
+@media (max-width: 680px){
+  .drum-main{
+    margin: 80px auto 0 auto;
+
+    #drum-machine{
+      width: 90vw;
+    }
+
+    .grid-container{
+      width: 90vw;
+      grid-template-columns: auto auto;
+      grid-gap: 4px;
+
+      h2{ margin: 40px 0 0 0 !important;}
+    }
+  }
+}
+
+@media (max-height: 680px){
+  .drum-main{
+    margin: 80px auto 0 auto;
+  }
+}
+
