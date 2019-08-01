@@ -183,21 +183,25 @@ const portfolio = {
   live: [
     {
       name: 'Fcc JavaScript Calculator',
-      path: 'calculator'
+      path: 'calculator',
+      display: 'js_calc.mp4'
     },
     {
       name: 'Fcc Pomodoro Clock',
       path: 'clock',
-      dependencie: 'Moment.js'
+      dependencie: 'Moment.js',
+      display: 'js_clock.mp4'
     },
     {
       name: 'Fcc Drummachine',
-      path: 'drummachine'
+      path: 'drummachine',
+      display: 'js_drum.mp4'
     },
     {
       name: 'Fcc Markdown',
       path: 'markdown',
-      dependencie: 'Markdown.js'
+      dependencie: 'Markdown.js',
+      display: 'js_markdown.mp4'
     }
   ]
 }
